@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Eye, EyeOff, Edit3 } from "lucide-react";
+import { Edit3 } from "lucide-react";
 import { useAtlas } from "@/lib/store";
 import type { Category } from "@/lib/data";
 import { toast } from "sonner";

@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { PublicLayout } from "@/components/site/PublicLayout";
@@ -11,7 +11,7 @@ export const Route = createFileRoute("/checkout")({
 
 function Checkout() {
   const { t } = useI18n();
-  const nav = useNavigate();
+  
   const { cart, products, createOrder } = useAtlas();
   const [submitted, setSubmitted] = useState<string | null>(null);
   const [form, setForm] = useState({ business: "", responsible: "", phone: "", sector: SECTOR_LIST[0] });
