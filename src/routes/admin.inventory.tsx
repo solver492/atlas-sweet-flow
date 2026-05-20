@@ -6,7 +6,7 @@ import type { Category } from "@/lib/data";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/admin/inventory")({
-  component: Inventory;
+  component: Inventory,
 });
 
 function Inventory() {
